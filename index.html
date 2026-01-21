@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>طلب الضيافة</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  .active {
+    background-color: #ea580c !important;
+    color: white !important;
+  }
+</style>
+</head>
+
+<body class="bg-[#221510] text-white min-h-screen p-6">
+
+<h1 class="text-2xl font-bold text-center mb-6">☕ طلب الضيافة</h1>
+
+<!-- المشروبات -->
+<div class="grid grid-cols-2 gap-4 mb-6">
+  <button class="drink bg-[#2d1e1a] p-4 rounded" data-drink="قهوة عربية">قهوة عربية</button>
+  <button class="drink bg-[#2d1e1a] p-4 rounded" data-drink="شاي أحمر">شاي أحمر</button>
+  <button class="drink bg-[#2d1e1a] p-4 rounded" data-drink="قهوة سوداء">قهوة سوداء</button>
+  <button class="drink bg-[#2d1e1a] p-4 rounded" data-drink="مياه">مياه</button>
+</div>
+
+<!-- السكر -->
+<p class="mb-2">السكر</p>
+<div class="flex gap-2 mb-4">
+  <button class="sugar bg-[#2d1e1a] px-4 py-2 rounded" data-value="بدون">بدون</button>
+  <button class="sugar bg-[#2d1e1a] px-4 py-2 rounded" data-value="وسط">وسط</button>
+  <button class="sugar bg-[#2d1e1a] px-4 py-2 rounded" data-value="زيادة">زيادة</button>
+</div>
+
+<!-- الحليب -->
+<p class="mb-2">الحليب</p>
+<div class="flex gap-2 mb-4">
+  <button class="milk bg-[#2d1e1a] px-4 py-2 rounded" data-value="بدون">بدون</button>
+  <button class="milk bg-[#2d1e1a] px-4 py-2 rounded" data-value="قليل">قليل</button>
+  <button class="milk bg-[#2d1e1a] px-4 py-2 rounded" data-value="كثير">كثير</button>
+</div>
+
+<textarea id="notes" class="w-full p-3 rounded text-black mb-4" placeholder="ملاحظات"></textarea>
+
+<button id="send"
+ class="w-full bg-orange-600 py-3 rounded text-lg font-bold">
+إرسال الطلب
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>
